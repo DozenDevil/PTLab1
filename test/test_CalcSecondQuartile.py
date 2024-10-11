@@ -19,7 +19,8 @@ class TestCalcSecondQuartile:
             "Смирнов": 82.0
         }
 
-    def test_find_students_in_second_quartile(self, input_ratings: RatingsType) -> None:
+    def test_find_students_in_second_quartile(self,
+                                              input_ratings: RatingsType) -> None:
         calc_quartile = CalcSecondQuartile(input_ratings)
         result = calc_quartile.calc()
 
