@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from Types import DataType
+from Types import DataType, RatingsType
 
 
 class CalcRating:
@@ -8,7 +8,7 @@ class CalcRating:
         self.data: DataType = data
         self.rating: RatingType = {}
 
-    def calc(self) -> RatingType:
+    def calc(self) -> RatingsType:
         for key in self.data:
             self.rating[key] = 0.0
             for subject in self.data[key]:
