@@ -6,7 +6,7 @@ class CalcRating:
 
     def __init__(self, data: DataType) -> None:
         self.data: DataType = data
-        self.rating: RatingType = {}
+        self.rating: RatingsType = {}
 
     def calc(self) -> RatingsType:
         for key in self.data:
